@@ -12,12 +12,20 @@ where (x_0,y_0) is the bottom left part of the site, and (x_1,y_1) is the top le
 
 A full bombsite can be written as a list of pieces, e.g.
 
-TestSite = [
+TestSite =
+[
+
     [-32, -32, 32, -16, 0],
+    
     [16, -16, 32, 32, 0],
+    
     [-32, 0, 0, 32, 500]
-    ]
-Operations can then be performed on TestSite, such as getArea which returns the area of each piece in the order they are written in TestSite, which would output array([1024,  768, 1024])
+    
+]
+
+Operations can then be performed on TestSite, such as getArea which returns the area of each piece in the order they are written in TestSite, which would output 
+
+array([1024,  768, 1024])
 
 The centre of the bombsite can be found using getCentroid, which returns the centre of the entire bombsite in an array. It takes in the TestSite list as well as the output of getArea, which is done for convenience elsewhere. It returns a 3x1 array of coordinates, which in this case is array([  0.72727273,  -0.72727273, 181.81818182]).
 
