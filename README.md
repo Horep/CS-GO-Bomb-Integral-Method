@@ -12,11 +12,10 @@ where (x_0,y_0) is the bottom left part of the site, and (x_1,y_1) is the top le
 
 A full bombsite can be written as a list of pieces, e.g.
 
-    TestSite =
-        [
-            [-32, -32, 32, -16, 0],
-            [16, -16, 32, 32, 0],
-            [-32, 0, 0, 32, 500]
+    TestSite = [
+        [-32, -32, 32, -16, 0],
+        [16, -16, 32, 32, 0],
+        [-32, 0, 0, 32, 500]
         ]
 
 Operations can then be performed on TestSite, such as getArea which returns the area of each piece in the order they are written in TestSite, which would output 
