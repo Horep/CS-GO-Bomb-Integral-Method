@@ -27,3 +27,5 @@ To create a bombsite field function using CreateFieldFunction, write the bombsit
 myFunction = CreateFieldFunction(mySite)
 
 Then you can evaluate myFunction(X_p,Y_p,Z_p) to get the average damage receieved from that bombsite at position (X_p,Y_p,Z_p) in the map. This can also be used with matplotlib or anything compatible with numpy and scipy to produce graphs.
+
+For example using the CreateFieldFunction on the TestSite above, and then evaluating at (1056,0,64) returns 39.01379338747492.
